@@ -1,0 +1,259 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input[type=search]{
+    height: 28px;
+    width: 18em;
+    border-radius: 10px;
+}
+input[type=search]:hover{
+    background-color: #a8a8a89e;
+    border: 2px solid black;
+}
+.topic p {
+    font-size: 60px;
+    text-shadow: 12px -12px 14px black;
+}
+
+.topic p:hover {
+    font-size: 55px;
+}
+
+.header {
+    display: grid;
+    align-items: center;
+    background-color: rgb(111, 84, 84, 0.3);
+}
+
+i {
+    float: left;
+    font-size: 50px;
+    font-family: cursive;
+}
+
+.title a {
+    color: #333;
+}
+
+i:hover {
+    color: rgba(132, 62, 29, 0.8);
+    text-shadow: 12px 12px 12px rgb(153, 147, 147);
+    cursor: pointer;
+    transform: translate3d(5px, 5px, 40px);
+    transition: transform 1s ease-in-out;
+}
+
+ul {
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    font-size: 18px;
+}
+
+/* img {
+    width: 100%;
+    height: 255px;
+    padding: 10px;
+} */
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul li a:hover {
+    color: rgba(169, 169, 169, 0.358);
+    text-decoration: underline;
+    font-size: 20px;
+} 
+
+.title p {
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 10px;
+    display: inline;
+
+}
+
+nav {
+    background-color: rgb(74, 69, 69);
+    padding: 20px;
+}
+body{
+    background-color: #33333343;
+}
+.content{
+    display: flex;
+    border: 1px solid black;
+    background-color: #fff;
+    
+}
+.item{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    
+}
+button{
+    width: 100%;
+    margin: auto;
+    height: 40px;
+    background-color: rgb(70, 70, 154);
+    color: #fff;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: rgba(70, 70, 154, 0.8);
+}
+
+button:active {
+    background-color: rgba(47, 34, 34, 0.725);
+}
+.discription{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    padding: 0 3% 0 3%;
+}
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+}
+label{
+    cursor: pointer;
+}
+p{
+    font-size: 22px;
+}
+.input{
+    display: flex;
+    gap: 4px;
+}
+.cost{
+    display: flex;
+    gap: 22px;
+}
+sub{
+    font-size: 27px;
+    color: red;
+}
+del{
+    opacity: 0.5;
+}
+sub:hover{
+    font-size: 30px;
+}
+del:hover{
+    opacity: 1;
+}
+.discount{
+    background-color: aqua;
+    padding: 4px 2px 0 2px;
+}
+.image{
+    width: 400px;
+    padding: 10px 0 0 10px;
+    height: auto; 
+     
+}
+
+img:hover{
+    box-shadow: 7px 10px 12px black;
+    transform: translate3d(2px,2px,20px);
+    transition: transform 1s ease;
+  }
+ .content:hover{
+    background-color: rgba(161, 141, 141, 0.05); 
+    border: 2px solid black;
+ }
+ img{
+    width: 22em;
+    height: 20em;
+    background: cover;
+    border-radius: 3px;
+    border: 1px solid black;
+ }
+ .container{
+    margin-top: 100px;
+ }
+ .item{
+    border: none;
+ }
+ .content{
+    border-radius: 10px;
+    
+ }
+ .discription p{
+    text-align: justify;
+    overflow: auto;
+ }
+ @media only screen and (max-width:1280px){
+       .head{
+        display: flex;
+        flex-wrap: nowrap;
+
+       }
+       .title a i{
+        font-size: 40px;
+       }
+       .topic p{
+        font-size: 50px;
+       }
+       input[type=search]{
+        width: 10em;
+       }
+       img{
+        width: 20em;
+       }
+    
+ }
+ @media only screen and (max-width:990px){
+    .head{
+        height: 10em;
+        display: flex;
+        flex-direction: column;
+    }
+    .title a i{
+        font-size: 35px;
+    }
+    input[type=search]{
+      width: 500px;
+      box-shadow: 7px 7px 15px rgb(0, 0, 0);
+      height: 30px;
+    }  
+    .search{
+        padding-bottom: 7px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .image{
+        margin: auto;
+    }
+    body{
+        width: 1000px;
+    }
+    
+ }
+ @media only screen and(max-width:560px) {
+                    
+    body{
+        width: 1000px;
+    }
+              
+}
